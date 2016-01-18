@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -g2 -Map=uRock-Lite.map -O0 --gc-sections -LD:/GitDev/embed/uRock-Lite/sw4stm32/urock-lite configuration -TD:/GitDev/embed/uRock-Lite/sw4stm32/urock-lite configuration/stm32f429zitx_flash.ld -g">
+      <target file="uRock-Lite.elf" lastModified="15255480651">
+         <source file="..\obj\stm32f4xx_hal_tim.o" lastModified="1525547f122"/>
+         <source file="..\obj\stm32f4xx_hal_uart.o" lastModified="1525547ef89"/>
+         <source file="..\obj\stm32f4xx_hal_flash.o" lastModified="1525547f2e2"/>
+         <source file="..\obj\stm32f4xx_hal_spi.o" lastModified="1525547eba2"/>
+         <source file="..\obj\tasks.o" lastModified="1525547f6eb"/>
+         <source file="..\obj\stm32f4xx_hal.o" lastModified="1525547f799"/>
+         <source file="..\obj\stm32f4xx_hal_rcc.o" lastModified="1525547fa75"/>
+         <source file="..\obj\stm32f4xx_hal_tim_ex.o" lastModified="152554802ad"/>
+         <source file="..\obj\stm32f4xx_hal_rcc_ex.o" lastModified="1525547f8b4"/>
+         <source file="..\obj\croutine.o" lastModified="1525547ffc3"/>
+         <source file="..\obj\stm32f4xx_hal_msp.o" lastModified="1525547eec1"/>
+         <source file="..\obj\stm32f4xx_hal_dma.o" lastModified="1525548040a"/>
+         <source file="..\obj\stm32f4xx_hal_adc.o" lastModified="1525547fd68"/>
+         <source file="..\obj\startup_stm32f429xx.o" lastModified="1525547f40f"/>
+         <source file="..\obj\stm32f4xx_hal_ltdc.o" lastModified="1525547ee20"/>
+         <source file="..\obj\heap_4.o" lastModified="1525547ea28"/>
+         <source file="..\obj\list.o" lastModified="1525547fc6d"/>
+         <source file="..\obj\stm32f4xx_hal_pwr.o" lastModified="1525547f3fd"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1525547fcbf"/>
+         <source file="..\obj\cmsis_os.o" lastModified="1525547fe1e"/>
+         <source file="..\obj\stm32f4xx_hal_flash_ex.o" lastModified="1525547fb84"/>
+         <source file="..\obj\timers.o" lastModified="1525547f37d"/>
+         <source file="..\obj\stm32f4xx_hal_dac.o" lastModified="1525547f5d3"/>
+         <source file="..\obj\stm32f4xx_hal_dsi.o" lastModified="1525547f4a5"/>
+         <source file="..\obj\stm32f4xx_ll_fmc.o" lastModified="15255480383"/>
+         <source file="..\obj\stm32f4xx_hal_i2c.o" lastModified="1525547ed63"/>
+         <source file="..\obj\main.o" lastModified="1525547f1db"/>
+         <source file="..\obj\stm32f4xx_hal_adc_ex.o" lastModified="1525547f541"/>
+         <source file="..\obj\port.o" lastModified="1525547ff06"/>
+         <source file="..\obj\freertos.o" lastModified="1525547f612"/>
+         <source file="..\obj\stm32f4xx_hal_i2c_ex.o" lastModified="15255480058"/>
+         <source file="..\obj\queue.o" lastModified="1525547febd"/>
+         <source file="..\obj\stm32f4xx_hal_ltdc_ex.o" lastModified="1525547f921"/>
+         <source file="..\obj\stm32f4xx_hal_cortex.o" lastModified="1525547fc1c"/>
+         <source file="..\obj\stm32f4xx_hal_pwr_ex.o" lastModified="152554801ed"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="1525547f259"/>
+         <source file="..\obj\stm32f4xx_hal_flash_ramfunc.o" lastModified="1525547ec24"/>
+         <source file="..\obj\stm32f4xx_hal_dma_ex.o" lastModified="1525547f816"/>
+         <source file="..\obj\stm32f4xx_hal_dac_ex.o" lastModified="1525548014f"/>
+         <source file="..\obj\stm32f4xx_hal_gpio.o" lastModified="1525547ff90"/>
+         <source file="..\obj\stm32f4xx_hal_sdram.o" lastModified="1525547f9ca"/>
+         <source file="..\obj\event_groups.o" lastModified="152554800c3"/>
+      </target>
+   </processor>
+</history>
