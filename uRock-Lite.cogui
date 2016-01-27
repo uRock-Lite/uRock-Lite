@@ -226,6 +226,16 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
+<persistable>
+<org.coocox.welcome.ui.WelcomePage/>
+</persistable>
+</file>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
+<persistable>
+<org.coocox.welcome.ui.WelcomePage/>
+</persistable>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="param.h" tooltip="uRock-Lite/Inc/dsp/param.h">
 <persistable path="/uRock-Lite/Inc/dsp/param.h"/>
 </file>
@@ -262,14 +272,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="param.h" tooltip="uRock-Lite/Inc/dsp/param.h">
 <persistable path="/uRock-Lite/Inc/dsp/param.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="effect.h" tooltip="uRock-Lite/Inc/dsp/effect.h">
-<persistable path="/uRock-Lite/Inc/dsp/effect.h"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dsp.h" tooltip="uRock-Lite/Inc/dsp/dsp.h">
 <persistable path="/uRock-Lite/Inc/dsp/dsp.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_msp.c" tooltip="uRock-Lite/Src/stm32f4xx_hal_msp.c">
-<persistable path="/uRock-Lite/Src/stm32f4xx_hal_msp.c"/>
 </file>
 </mruList>
 </workbench>

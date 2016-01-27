@@ -1,0 +1,3 @@
+* This dictionary is used to place digital effect processing codes, and a effecet a dictionary.
+
+* After putting generated code here, dont forget regiset them on "ABOUTME" by JSON formate at "bluetooth_handler". 
