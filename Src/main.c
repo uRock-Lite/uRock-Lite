@@ -35,7 +35,10 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "param.h"
+#include "effect.h"
+#include "dsp.h"
+#include "bluetooth_handler.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -559,10 +562,13 @@ void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 #define BUFFER_NUM 2
-#define SAMPLE_NUM 256
+#define SAMPLE_NUM 16 /*[TODO]Try larger sample number.*/
 #define SAMPLE_MAX 2047
 volatile uint32_t SignalBuffer[BUFFER_NUM][SAMPLE_NUM];
-uint32_t i, j;
+
+dsp mydsp;
+
+int c = 0;
 /* USER CODE END 4 */
 
 /* SignalProcessTask function */
@@ -570,15 +576,34 @@ void SignalProcessTask(void const * argument)
 {
 
   /* USER CODE BEGIN 5 */
-	HAL_TIM_Base_Start(&htim6);
+	// ADC
 	HAL_ADC_Start_DMA(&hadc1, SignalBuffer[0], SAMPLE_NUM);
+	// DAC
 	HAL_DAC_Start_DMA(&hdac, DAC_CHANNEL_2, SignalBuffer[1], SAMPLE_NUM, DAC_ALIGN_12B_R);
+	// Timer
+	HAL_TIM_Base_Start(&htim6);
+	// **DSP**
+	dsp_init(&mydsp,
+			"uRock0.1",
+			 "{}",
+			1,
+			SAMPLE_NUM);
+	// **Bluetooth handler**
+	bluetooth_handler_init();
+
   /* Infinite loop */
 	for(;;)
 	{
-		for(i = 0; i < SAMPLE_NUM; i++){
-		  SignalBuffer[1][i] = SignalBuffer[0][i];
+		dsp_execute(&mydsp,SignalBuffer[0],SignalBuffer[1]);
+
+		/* Performance mointor */
+		if(c > 3000){
+			HAL_GPIO_TogglePin(GPIOG,GPIO_PIN_14);
+			c = 0;
 		}
+		else
+			c++;
+
 	}
   /* USER CODE END 5 */ 
 }
